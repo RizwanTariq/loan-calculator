@@ -12,6 +12,14 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <style>
+      #results {
+        display: none;
+      }
+      #loading {
+        display: none;
+      }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -28,6 +36,8 @@
                     id="amount"
                     class="form-control"
                     placeholder="Loan Amount"
+                    min="1"
+                    required
                   />
                 </div>
               </div>
@@ -39,6 +49,8 @@
                     id="interest"
                     class="form-control"
                     placeholder="Interest"
+                    min="1"
+                    required
                   />
                 </div>
               </div>
@@ -48,6 +60,8 @@
                   id="years"
                   placeholder="Years to repay"
                   class="form-control"
+                  min="1"
+                  required
                 />
               </div>
               <div class="form-group d-grid gap-2 my-3">
@@ -55,7 +69,10 @@
               </div>
             </form>
             <!-- LOADER HERE -->
-            <!-- <div id="loading"><img src="./img/loading.gif" /></div> -->
+            <div id="loading" class="my-2">
+              <h5>Calculating</h5>
+              <img src="./img/loading.gif" alt="loading" />
+            </div>
             <!-- RESULTS -->
             <div id="results" class="my-3">
               <h5>Results</h5>
@@ -102,6 +119,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
