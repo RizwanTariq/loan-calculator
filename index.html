@@ -14,6 +14,89 @@
     <title>Document</title>
   </head>
   <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class=".col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">$</span>
+                  <input
+                    type="number"
+                    id="amount"
+                    class="form-control"
+                    placeholder="Loan Amount"
+                  />
+                </div>
+              </div>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <span class="input-group-text">%</span>
+                  <input
+                    type="number"
+                    id="interest"
+                    class="form-control"
+                    placeholder="Interest"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="years"
+                  placeholder="Years to repay"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group d-grid gap-2 my-3">
+                <input type="submit" class="btn btn-info" value="Calculate" />
+              </div>
+            </form>
+            <!-- LOADER HERE -->
+            <!-- <div id="loading"><img src="./img/loading.gif" /></div> -->
+            <!-- RESULTS -->
+            <div id="results" class="my-3">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Monthly Payment</span>
+                  <input
+                    type="number"
+                    id="monthly-payment"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <span class="input-group-text">Total Payment</span>
+                  <input
+                    type="number"
+                    id="total-payment"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Total Interest</span>
+                  <input
+                    type="number"
+                    id="total-interest"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
