@@ -1,0 +1,19 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "Loan calculator using HTML, CSS & JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RizwanTariq/loan-calculator.git"
+  },
+  "author": "Rizwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RizwanTariq/loan-calculator/issues"
+  },
+  "homepage": "https://github.com/RizwanTariq/loan-calculator#readme"
+}
